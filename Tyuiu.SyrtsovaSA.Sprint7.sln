@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project.V11", "Project.V11"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.SyrtsovaSA.Sprint7.Project.V11", "Tyuiu.SyrtsovaSA.Sprint7.Project.V11\Tyuiu.SyrtsovaSA.Sprint7.Project.V11.csproj", "{BC8A9373-7081-49A9-A16D-DAC904372103}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.SyrtsovaSA.Sprint7.Project.V11.Test", "Tyuiu.SyrtsovaSA.Sprint7.Project.V11.Test\Tyuiu.SyrtsovaSA.Sprint7.Project.V11.Test.csproj", "{E28B87C9-96CD-4B72-B0BD-61BFD32DA741}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tyuiu.SyrtsovaSA.Sprint7.Project.V11.Lib", "Tyuiu.SyrtsovaSA.Sprint7.Project.V11.Lib\Tyuiu.SyrtsovaSA.Sprint7.Project.V11.Lib.csproj", "{3F420498-EF02-4913-8C66-2035729F4318}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +21,22 @@ Global
 		{BC8A9373-7081-49A9-A16D-DAC904372103}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC8A9373-7081-49A9-A16D-DAC904372103}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC8A9373-7081-49A9-A16D-DAC904372103}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E28B87C9-96CD-4B72-B0BD-61BFD32DA741}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E28B87C9-96CD-4B72-B0BD-61BFD32DA741}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E28B87C9-96CD-4B72-B0BD-61BFD32DA741}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E28B87C9-96CD-4B72-B0BD-61BFD32DA741}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F420498-EF02-4913-8C66-2035729F4318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F420498-EF02-4913-8C66-2035729F4318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F420498-EF02-4913-8C66-2035729F4318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F420498-EF02-4913-8C66-2035729F4318}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BC8A9373-7081-49A9-A16D-DAC904372103} = {9533A575-62D6-4D9A-9E94-D0262A4426A3}
+		{E28B87C9-96CD-4B72-B0BD-61BFD32DA741} = {9533A575-62D6-4D9A-9E94-D0262A4426A3}
+		{3F420498-EF02-4913-8C66-2035729F4318} = {9533A575-62D6-4D9A-9E94-D0262A4426A3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C04199E2-9750-495A-B96C-6680E8F40C81}
