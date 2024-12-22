@@ -21,5 +21,17 @@ namespace Tyuiu.SyrtsovaSA.Sprint7.Project.V11
         {
 
         }
+
+        private void buttonGuide_SSA_Click(object sender, EventArgs e)
+        {
+            FormGuide formGuide = new FormGuide();
+            formGuide.ShowDialog();
+        }
+
+        private void buttonAbout_SSA_Click(object sender, EventArgs e)
+        {
+            FormAbout formAbout = new FormAbout();
+            formAbout.ShowDialog();
+        }
     }
 }

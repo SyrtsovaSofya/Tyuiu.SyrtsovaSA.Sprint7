@@ -29,23 +29,25 @@
         private void InitializeComponent()
         {
             this.panelMenu_SSA = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonAbout_SSA = new System.Windows.Forms.Button();
+            this.buttonGuide_SSA = new System.Windows.Forms.Button();
+            this.buttonUnits_SSA = new System.Windows.Forms.Button();
+            this.buttonEmployees_SSA = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.button8 = new System.Windows.Forms.Button();
+            this.comboBoxSort_SSA = new System.Windows.Forms.ComboBox();
+            this.buttonSearch_SSA = new System.Windows.Forms.Button();
+            this.buttonSaveEmployee_SSA = new System.Windows.Forms.Button();
+            this.buttonAddEmployee_SSA = new System.Windows.Forms.Button();
+            this.textBoxStartWork_SSA = new System.Windows.Forms.TextBox();
+            this.textBoxExperience_SSA = new System.Windows.Forms.TextBox();
+            this.textBoxDegree_SSA = new System.Windows.Forms.TextBox();
+            this.textBoxBirth_SSA = new System.Windows.Forms.TextBox();
+            this.textBoxRole_SSA = new System.Windows.Forms.TextBox();
+            this.textBoxPhone_SSA = new System.Windows.Forms.TextBox();
+            this.textBoxAdress_SSA = new System.Windows.Forms.TextBox();
+            this.textBoxFIO_SSA = new System.Windows.Forms.TextBox();
+            this.labelDegree_SSA = new System.Windows.Forms.Label();
             this.labelExperience_SSA = new System.Windows.Forms.Label();
             this.labelStartWork_SSA = new System.Windows.Forms.Label();
             this.labelRole_SSA = new System.Windows.Forms.Label();
@@ -53,107 +55,107 @@
             this.labelPhone_SSA = new System.Windows.Forms.Label();
             this.labelAdress_SSA = new System.Windows.Forms.Label();
             this.labelFIO_SSA = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button8 = new System.Windows.Forms.Button();
+            this.textBoxSearch_SSA = new System.Windows.Forms.TextBox();
+            this.dataGridViewEmployees_SSA = new System.Windows.Forms.DataGridView();
+            this.labelEmployees_SSA = new System.Windows.Forms.Label();
             this.panelMenu_SSA.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployees_SSA)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu_SSA
             // 
             this.panelMenu_SSA.BackColor = System.Drawing.Color.SeaShell;
             this.panelMenu_SSA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelMenu_SSA.Controls.Add(this.button4);
-            this.panelMenu_SSA.Controls.Add(this.button3);
-            this.panelMenu_SSA.Controls.Add(this.button2);
-            this.panelMenu_SSA.Controls.Add(this.button1);
+            this.panelMenu_SSA.Controls.Add(this.buttonAbout_SSA);
+            this.panelMenu_SSA.Controls.Add(this.buttonGuide_SSA);
+            this.panelMenu_SSA.Controls.Add(this.buttonUnits_SSA);
+            this.panelMenu_SSA.Controls.Add(this.buttonEmployees_SSA);
             this.panelMenu_SSA.Location = new System.Drawing.Point(0, -1);
             this.panelMenu_SSA.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
             this.panelMenu_SSA.Name = "panelMenu_SSA";
             this.panelMenu_SSA.Size = new System.Drawing.Size(225, 552);
             this.panelMenu_SSA.TabIndex = 0;
             // 
-            // button4
+            // buttonAbout_SSA
             // 
-            this.button4.BackColor = System.Drawing.Color.SeaShell;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button4.Location = new System.Drawing.Point(-1, 167);
-            this.button4.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(226, 59);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "О программе";
-            this.button4.UseVisualStyleBackColor = false;
+            this.buttonAbout_SSA.BackColor = System.Drawing.Color.SeaShell;
+            this.buttonAbout_SSA.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.buttonAbout_SSA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAbout_SSA.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonAbout_SSA.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonAbout_SSA.Location = new System.Drawing.Point(-1, 167);
+            this.buttonAbout_SSA.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.buttonAbout_SSA.Name = "buttonAbout_SSA";
+            this.buttonAbout_SSA.Size = new System.Drawing.Size(226, 59);
+            this.buttonAbout_SSA.TabIndex = 3;
+            this.buttonAbout_SSA.Text = "О программе";
+            this.buttonAbout_SSA.UseVisualStyleBackColor = false;
+            this.buttonAbout_SSA.Click += new System.EventHandler(this.buttonAbout_SSA_Click);
             // 
-            // button3
+            // buttonGuide_SSA
             // 
-            this.button3.BackColor = System.Drawing.Color.SeaShell;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button3.Location = new System.Drawing.Point(-1, 112);
-            this.button3.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(226, 59);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Руководство пользователя";
-            this.button3.UseVisualStyleBackColor = false;
+            this.buttonGuide_SSA.BackColor = System.Drawing.Color.SeaShell;
+            this.buttonGuide_SSA.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.buttonGuide_SSA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonGuide_SSA.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonGuide_SSA.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonGuide_SSA.Location = new System.Drawing.Point(-1, 112);
+            this.buttonGuide_SSA.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.buttonGuide_SSA.Name = "buttonGuide_SSA";
+            this.buttonGuide_SSA.Size = new System.Drawing.Size(226, 59);
+            this.buttonGuide_SSA.TabIndex = 2;
+            this.buttonGuide_SSA.Text = "Руководство пользователя";
+            this.buttonGuide_SSA.UseVisualStyleBackColor = false;
+            this.buttonGuide_SSA.Click += new System.EventHandler(this.buttonGuide_SSA_Click);
             // 
-            // button2
+            // buttonUnits_SSA
             // 
-            this.button2.BackColor = System.Drawing.Color.SeaShell;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(-1, 56);
-            this.button2.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(226, 59);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Подразделения";
-            this.button2.UseVisualStyleBackColor = false;
+            this.buttonUnits_SSA.BackColor = System.Drawing.Color.SeaShell;
+            this.buttonUnits_SSA.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.buttonUnits_SSA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonUnits_SSA.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonUnits_SSA.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonUnits_SSA.Location = new System.Drawing.Point(-1, 56);
+            this.buttonUnits_SSA.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.buttonUnits_SSA.Name = "buttonUnits_SSA";
+            this.buttonUnits_SSA.Size = new System.Drawing.Size(225, 59);
+            this.buttonUnits_SSA.TabIndex = 1;
+            this.buttonUnits_SSA.Text = "Подразделения";
+            this.buttonUnits_SSA.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // buttonEmployees_SSA
             // 
-            this.button1.BackColor = System.Drawing.Color.SeaShell;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(-1, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(226, 59);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Сотрудники";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonEmployees_SSA.BackColor = System.Drawing.Color.SeaShell;
+            this.buttonEmployees_SSA.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.buttonEmployees_SSA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEmployees_SSA.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonEmployees_SSA.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonEmployees_SSA.Location = new System.Drawing.Point(-1, 0);
+            this.buttonEmployees_SSA.Margin = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.buttonEmployees_SSA.Name = "buttonEmployees_SSA";
+            this.buttonEmployees_SSA.Size = new System.Drawing.Size(226, 59);
+            this.buttonEmployees_SSA.TabIndex = 0;
+            this.buttonEmployees_SSA.Text = "Сотрудники";
+            this.buttonEmployees_SSA.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FloralWhite;
             this.panel1.Controls.Add(this.button8);
-            this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.button7);
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.textBox9);
-            this.panel1.Controls.Add(this.textBox8);
-            this.panel1.Controls.Add(this.textBox7);
-            this.panel1.Controls.Add(this.textBox6);
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.comboBoxSort_SSA);
+            this.panel1.Controls.Add(this.buttonSearch_SSA);
+            this.panel1.Controls.Add(this.buttonSaveEmployee_SSA);
+            this.panel1.Controls.Add(this.buttonAddEmployee_SSA);
+            this.panel1.Controls.Add(this.textBoxStartWork_SSA);
+            this.panel1.Controls.Add(this.textBoxExperience_SSA);
+            this.panel1.Controls.Add(this.textBoxDegree_SSA);
+            this.panel1.Controls.Add(this.textBoxBirth_SSA);
+            this.panel1.Controls.Add(this.textBoxRole_SSA);
+            this.panel1.Controls.Add(this.textBoxPhone_SSA);
+            this.panel1.Controls.Add(this.textBoxAdress_SSA);
+            this.panel1.Controls.Add(this.textBoxFIO_SSA);
+            this.panel1.Controls.Add(this.labelDegree_SSA);
             this.panel1.Controls.Add(this.labelExperience_SSA);
             this.panel1.Controls.Add(this.labelStartWork_SSA);
             this.panel1.Controls.Add(this.labelRole_SSA);
@@ -161,118 +163,141 @@
             this.panel1.Controls.Add(this.labelPhone_SSA);
             this.panel1.Controls.Add(this.labelAdress_SSA);
             this.panel1.Controls.Add(this.labelFIO_SSA);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.textBoxSearch_SSA);
+            this.panel1.Controls.Add(this.dataGridViewEmployees_SSA);
+            this.panel1.Controls.Add(this.labelEmployees_SSA);
             this.panel1.Location = new System.Drawing.Point(228, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1031, 551);
             this.panel1.TabIndex = 2;
             // 
-            // button7
+            // button8
             // 
-            this.button7.BackColor = System.Drawing.Color.FloralWhite;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button7.Location = new System.Drawing.Point(212, 56);
-            this.button7.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(31, 30);
-            this.button7.TabIndex = 26;
-            this.button7.Text = "🔎";
-            this.button7.UseVisualStyleBackColor = false;
+            this.button8.BackColor = System.Drawing.Color.Cornsilk;
+            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button8.Location = new System.Drawing.Point(840, 45);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(178, 41);
+            this.button8.TabIndex = 28;
+            this.button8.Text = "Статистика";
+            this.button8.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // comboBoxSort_SSA
             // 
-            this.button6.BackColor = System.Drawing.Color.Cornsilk;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button6.Location = new System.Drawing.Point(840, 490);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(178, 45);
-            this.button6.TabIndex = 25;
-            this.button6.Text = "Сохранить изменения";
-            this.button6.UseVisualStyleBackColor = false;
+            this.comboBoxSort_SSA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBoxSort_SSA.FormattingEnabled = true;
+            this.comboBoxSort_SSA.Location = new System.Drawing.Point(281, 56);
+            this.comboBoxSort_SSA.Name = "comboBoxSort_SSA";
+            this.comboBoxSort_SSA.Size = new System.Drawing.Size(168, 30);
+            this.comboBoxSort_SSA.TabIndex = 27;
+            this.comboBoxSort_SSA.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // button5
+            // buttonSearch_SSA
             // 
-            this.button5.BackColor = System.Drawing.Color.Cornsilk;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button5.Location = new System.Drawing.Point(840, 441);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(178, 41);
-            this.button5.TabIndex = 24;
-            this.button5.Text = "Добавить";
-            this.button5.UseVisualStyleBackColor = false;
+            this.buttonSearch_SSA.BackColor = System.Drawing.Color.FloralWhite;
+            this.buttonSearch_SSA.FlatAppearance.BorderSize = 0;
+            this.buttonSearch_SSA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSearch_SSA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonSearch_SSA.Location = new System.Drawing.Point(212, 56);
+            this.buttonSearch_SSA.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
+            this.buttonSearch_SSA.Name = "buttonSearch_SSA";
+            this.buttonSearch_SSA.Size = new System.Drawing.Size(31, 30);
+            this.buttonSearch_SSA.TabIndex = 26;
+            this.buttonSearch_SSA.Text = "🔎";
+            this.buttonSearch_SSA.UseVisualStyleBackColor = false;
             // 
-            // textBox9
+            // buttonSaveEmployee_SSA
             // 
-            this.textBox9.Location = new System.Drawing.Point(534, 513);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(123, 22);
-            this.textBox9.TabIndex = 23;
+            this.buttonSaveEmployee_SSA.BackColor = System.Drawing.Color.Cornsilk;
+            this.buttonSaveEmployee_SSA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSaveEmployee_SSA.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonSaveEmployee_SSA.Location = new System.Drawing.Point(840, 490);
+            this.buttonSaveEmployee_SSA.Name = "buttonSaveEmployee_SSA";
+            this.buttonSaveEmployee_SSA.Size = new System.Drawing.Size(178, 45);
+            this.buttonSaveEmployee_SSA.TabIndex = 25;
+            this.buttonSaveEmployee_SSA.Text = "Сохранить изменения";
+            this.buttonSaveEmployee_SSA.UseVisualStyleBackColor = false;
             // 
-            // textBox8
+            // buttonAddEmployee_SSA
             // 
-            this.textBox8.Location = new System.Drawing.Point(534, 460);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(123, 22);
-            this.textBox8.TabIndex = 22;
+            this.buttonAddEmployee_SSA.BackColor = System.Drawing.Color.Cornsilk;
+            this.buttonAddEmployee_SSA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonAddEmployee_SSA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAddEmployee_SSA.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonAddEmployee_SSA.Location = new System.Drawing.Point(840, 441);
+            this.buttonAddEmployee_SSA.Name = "buttonAddEmployee_SSA";
+            this.buttonAddEmployee_SSA.Size = new System.Drawing.Size(178, 41);
+            this.buttonAddEmployee_SSA.TabIndex = 24;
+            this.buttonAddEmployee_SSA.Text = "Добавить";
+            this.buttonAddEmployee_SSA.UseVisualStyleBackColor = false;
             // 
-            // textBox7
+            // textBoxStartWork_SSA
             // 
-            this.textBox7.Location = new System.Drawing.Point(381, 513);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(123, 22);
-            this.textBox7.TabIndex = 21;
+            this.textBoxStartWork_SSA.Location = new System.Drawing.Point(534, 513);
+            this.textBoxStartWork_SSA.Name = "textBoxStartWork_SSA";
+            this.textBoxStartWork_SSA.Size = new System.Drawing.Size(123, 22);
+            this.textBoxStartWork_SSA.TabIndex = 23;
             // 
-            // textBox6
+            // textBoxExperience_SSA
             // 
-            this.textBox6.Location = new System.Drawing.Point(381, 460);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(123, 22);
-            this.textBox6.TabIndex = 20;
+            this.textBoxExperience_SSA.Location = new System.Drawing.Point(534, 460);
+            this.textBoxExperience_SSA.Name = "textBoxExperience_SSA";
+            this.textBoxExperience_SSA.Size = new System.Drawing.Size(123, 22);
+            this.textBoxExperience_SSA.TabIndex = 22;
             // 
-            // textBox5
+            // textBoxDegree_SSA
             // 
-            this.textBox5.Location = new System.Drawing.Point(200, 513);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(150, 22);
-            this.textBox5.TabIndex = 19;
+            this.textBoxDegree_SSA.Location = new System.Drawing.Point(381, 513);
+            this.textBoxDegree_SSA.Name = "textBoxDegree_SSA";
+            this.textBoxDegree_SSA.Size = new System.Drawing.Size(123, 22);
+            this.textBoxDegree_SSA.TabIndex = 21;
             // 
-            // textBox4
+            // textBoxBirth_SSA
             // 
-            this.textBox4.Location = new System.Drawing.Point(200, 460);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(150, 22);
-            this.textBox4.TabIndex = 18;
+            this.textBoxBirth_SSA.Location = new System.Drawing.Point(381, 460);
+            this.textBoxBirth_SSA.Name = "textBoxBirth_SSA";
+            this.textBoxBirth_SSA.Size = new System.Drawing.Size(123, 22);
+            this.textBoxBirth_SSA.TabIndex = 20;
             // 
-            // textBox3
+            // textBoxRole_SSA
             // 
-            this.textBox3.Location = new System.Drawing.Point(20, 513);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(150, 22);
-            this.textBox3.TabIndex = 17;
+            this.textBoxRole_SSA.Location = new System.Drawing.Point(200, 513);
+            this.textBoxRole_SSA.Name = "textBoxRole_SSA";
+            this.textBoxRole_SSA.Size = new System.Drawing.Size(150, 22);
+            this.textBoxRole_SSA.TabIndex = 19;
             // 
-            // textBox2
+            // textBoxPhone_SSA
             // 
-            this.textBox2.Location = new System.Drawing.Point(20, 460);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(150, 22);
-            this.textBox2.TabIndex = 16;
+            this.textBoxPhone_SSA.Location = new System.Drawing.Point(200, 460);
+            this.textBoxPhone_SSA.Name = "textBoxPhone_SSA";
+            this.textBoxPhone_SSA.Size = new System.Drawing.Size(150, 22);
+            this.textBoxPhone_SSA.TabIndex = 18;
             // 
-            // label3
+            // textBoxAdress_SSA
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(377, 490);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 20);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "Образование:";
+            this.textBoxAdress_SSA.Location = new System.Drawing.Point(20, 513);
+            this.textBoxAdress_SSA.Name = "textBoxAdress_SSA";
+            this.textBoxAdress_SSA.Size = new System.Drawing.Size(150, 22);
+            this.textBoxAdress_SSA.TabIndex = 17;
+            // 
+            // textBoxFIO_SSA
+            // 
+            this.textBoxFIO_SSA.Location = new System.Drawing.Point(20, 460);
+            this.textBoxFIO_SSA.Name = "textBoxFIO_SSA";
+            this.textBoxFIO_SSA.Size = new System.Drawing.Size(150, 22);
+            this.textBoxFIO_SSA.TabIndex = 16;
+            // 
+            // labelDegree_SSA
+            // 
+            this.labelDegree_SSA.AutoSize = true;
+            this.labelDegree_SSA.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelDegree_SSA.Location = new System.Drawing.Point(377, 490);
+            this.labelDegree_SSA.Name = "labelDegree_SSA";
+            this.labelDegree_SSA.Size = new System.Drawing.Size(107, 20);
+            this.labelDegree_SSA.TabIndex = 15;
+            this.labelDegree_SSA.Text = "Образование:";
             // 
             // labelExperience_SSA
             // 
@@ -344,56 +369,33 @@
             this.labelFIO_SSA.TabIndex = 8;
             this.labelFIO_SSA.Text = "ФИО:";
             // 
-            // textBox1
+            // textBoxSearch_SSA
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(21, 56);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(188, 28);
-            this.textBox1.TabIndex = 7;
+            this.textBoxSearch_SSA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxSearch_SSA.Location = new System.Drawing.Point(21, 56);
+            this.textBoxSearch_SSA.Name = "textBoxSearch_SSA";
+            this.textBoxSearch_SSA.Size = new System.Drawing.Size(188, 28);
+            this.textBoxSearch_SSA.TabIndex = 7;
             // 
-            // dataGridView1
+            // dataGridViewEmployees_SSA
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(20, 92);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 50;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(998, 341);
-            this.dataGridView1.TabIndex = 5;
+            this.dataGridViewEmployees_SSA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewEmployees_SSA.Location = new System.Drawing.Point(20, 92);
+            this.dataGridViewEmployees_SSA.Name = "dataGridViewEmployees_SSA";
+            this.dataGridViewEmployees_SSA.RowHeadersWidth = 50;
+            this.dataGridViewEmployees_SSA.RowTemplate.Height = 24;
+            this.dataGridViewEmployees_SSA.Size = new System.Drawing.Size(998, 341);
+            this.dataGridViewEmployees_SSA.TabIndex = 5;
             // 
-            // label1
+            // labelEmployees_SSA
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semilight", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(404, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(196, 31);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Учет сотрудников";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(281, 56);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(168, 30);
-            this.comboBox1.TabIndex = 27;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.Cornsilk;
-            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button8.Location = new System.Drawing.Point(840, 45);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(178, 41);
-            this.button8.TabIndex = 28;
-            this.button8.Text = "Статистика";
-            this.button8.UseVisualStyleBackColor = false;
+            this.labelEmployees_SSA.AutoSize = true;
+            this.labelEmployees_SSA.Font = new System.Drawing.Font("Segoe UI Semilight", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelEmployees_SSA.Location = new System.Drawing.Point(404, 9);
+            this.labelEmployees_SSA.Name = "labelEmployees_SSA";
+            this.labelEmployees_SSA.Size = new System.Drawing.Size(196, 31);
+            this.labelEmployees_SSA.TabIndex = 4;
+            this.labelEmployees_SSA.Text = "Учет сотрудников";
             // 
             // FormMain
             // 
@@ -408,7 +410,7 @@
             this.panelMenu_SSA.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployees_SSA)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -416,34 +418,34 @@
         #endregion
 
         private System.Windows.Forms.Panel panelMenu_SSA;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonEmployees_SSA;
+        private System.Windows.Forms.Button buttonAbout_SSA;
+        private System.Windows.Forms.Button buttonGuide_SSA;
+        private System.Windows.Forms.Button buttonUnits_SSA;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label labelEmployees_SSA;
+        private System.Windows.Forms.DataGridView dataGridViewEmployees_SSA;
+        private System.Windows.Forms.TextBox textBoxSearch_SSA;
         private System.Windows.Forms.Label labelAdress_SSA;
         private System.Windows.Forms.Label labelFIO_SSA;
         private System.Windows.Forms.Label labelPhone_SSA;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelDegree_SSA;
         private System.Windows.Forms.Label labelExperience_SSA;
         private System.Windows.Forms.Label labelStartWork_SSA;
         private System.Windows.Forms.Label labelRole_SSA;
         private System.Windows.Forms.Label labelBirth_SSA;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox textBoxFIO_SSA;
+        private System.Windows.Forms.TextBox textBoxStartWork_SSA;
+        private System.Windows.Forms.TextBox textBoxExperience_SSA;
+        private System.Windows.Forms.TextBox textBoxDegree_SSA;
+        private System.Windows.Forms.TextBox textBoxBirth_SSA;
+        private System.Windows.Forms.TextBox textBoxRole_SSA;
+        private System.Windows.Forms.TextBox textBoxPhone_SSA;
+        private System.Windows.Forms.TextBox textBoxAdress_SSA;
+        private System.Windows.Forms.Button buttonSearch_SSA;
+        private System.Windows.Forms.Button buttonSaveEmployee_SSA;
+        private System.Windows.Forms.Button buttonAddEmployee_SSA;
+        private System.Windows.Forms.ComboBox comboBoxSort_SSA;
         private System.Windows.Forms.Button button8;
     }
 }
