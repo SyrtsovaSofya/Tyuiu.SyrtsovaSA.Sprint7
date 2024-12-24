@@ -1,4 +1,6 @@
-﻿namespace Tyuiu.SyrtsovaSA.Sprint7.Project.V11
+﻿using System.Windows.Forms;
+
+namespace Tyuiu.SyrtsovaSA.Sprint7.Project.V11
 {
     partial class FormMain
     {
@@ -28,16 +30,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panelMenu_SSA = new System.Windows.Forms.Panel();
             this.buttonAbout_SSA = new System.Windows.Forms.Button();
             this.buttonGuide_SSA = new System.Windows.Forms.Button();
             this.buttonUnits_SSA = new System.Windows.Forms.Button();
             this.buttonEmployees_SSA = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelEmployees_SSA = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
             this.comboBoxSort_SSA = new System.Windows.Forms.ComboBox();
-            this.buttonSearch_SSA = new System.Windows.Forms.Button();
-            this.buttonSaveEmployee_SSA = new System.Windows.Forms.Button();
+            this.buttonSearchEmployees_SSA = new System.Windows.Forms.Button();
+            this.buttonDeleteEmployee_SSA = new System.Windows.Forms.Button();
             this.buttonAddEmployee_SSA = new System.Windows.Forms.Button();
             this.textBoxStartWork_SSA = new System.Windows.Forms.TextBox();
             this.textBoxExperience_SSA = new System.Windows.Forms.TextBox();
@@ -55,11 +58,20 @@
             this.labelPhone_SSA = new System.Windows.Forms.Label();
             this.labelAdress_SSA = new System.Windows.Forms.Label();
             this.labelFIO_SSA = new System.Windows.Forms.Label();
-            this.textBoxSearch_SSA = new System.Windows.Forms.TextBox();
+            this.textBoxSearchEmployees_SSA = new System.Windows.Forms.TextBox();
             this.dataGridViewEmployees_SSA = new System.Windows.Forms.DataGridView();
             this.labelEmployees_SSA = new System.Windows.Forms.Label();
+            this.toolTip_SSA = new System.Windows.Forms.ToolTip(this.components);
+            this.FIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Role = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Birth = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Degree = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Experience = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StartWork = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelMenu_SSA.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.panelEmployees_SSA.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployees_SSA)).BeginInit();
             this.SuspendLayout();
             // 
@@ -123,6 +135,7 @@
             this.buttonUnits_SSA.TabIndex = 1;
             this.buttonUnits_SSA.Text = "Подразделения";
             this.buttonUnits_SSA.UseVisualStyleBackColor = false;
+            this.buttonUnits_SSA.Click += new System.EventHandler(this.buttonUnits_SSA_Click);
             // 
             // buttonEmployees_SSA
             // 
@@ -138,38 +151,39 @@
             this.buttonEmployees_SSA.TabIndex = 0;
             this.buttonEmployees_SSA.Text = "Сотрудники";
             this.buttonEmployees_SSA.UseVisualStyleBackColor = false;
+            this.buttonEmployees_SSA.Click += new System.EventHandler(this.buttonEmployees_SSA_Click);
             // 
-            // panel1
+            // panelEmployees_SSA
             // 
-            this.panel1.BackColor = System.Drawing.Color.FloralWhite;
-            this.panel1.Controls.Add(this.button8);
-            this.panel1.Controls.Add(this.comboBoxSort_SSA);
-            this.panel1.Controls.Add(this.buttonSearch_SSA);
-            this.panel1.Controls.Add(this.buttonSaveEmployee_SSA);
-            this.panel1.Controls.Add(this.buttonAddEmployee_SSA);
-            this.panel1.Controls.Add(this.textBoxStartWork_SSA);
-            this.panel1.Controls.Add(this.textBoxExperience_SSA);
-            this.panel1.Controls.Add(this.textBoxDegree_SSA);
-            this.panel1.Controls.Add(this.textBoxBirth_SSA);
-            this.panel1.Controls.Add(this.textBoxRole_SSA);
-            this.panel1.Controls.Add(this.textBoxPhone_SSA);
-            this.panel1.Controls.Add(this.textBoxAdress_SSA);
-            this.panel1.Controls.Add(this.textBoxFIO_SSA);
-            this.panel1.Controls.Add(this.labelDegree_SSA);
-            this.panel1.Controls.Add(this.labelExperience_SSA);
-            this.panel1.Controls.Add(this.labelStartWork_SSA);
-            this.panel1.Controls.Add(this.labelRole_SSA);
-            this.panel1.Controls.Add(this.labelBirth_SSA);
-            this.panel1.Controls.Add(this.labelPhone_SSA);
-            this.panel1.Controls.Add(this.labelAdress_SSA);
-            this.panel1.Controls.Add(this.labelFIO_SSA);
-            this.panel1.Controls.Add(this.textBoxSearch_SSA);
-            this.panel1.Controls.Add(this.dataGridViewEmployees_SSA);
-            this.panel1.Controls.Add(this.labelEmployees_SSA);
-            this.panel1.Location = new System.Drawing.Point(228, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1031, 551);
-            this.panel1.TabIndex = 2;
+            this.panelEmployees_SSA.BackColor = System.Drawing.Color.FloralWhite;
+            this.panelEmployees_SSA.Controls.Add(this.button8);
+            this.panelEmployees_SSA.Controls.Add(this.comboBoxSort_SSA);
+            this.panelEmployees_SSA.Controls.Add(this.buttonSearchEmployees_SSA);
+            this.panelEmployees_SSA.Controls.Add(this.buttonDeleteEmployee_SSA);
+            this.panelEmployees_SSA.Controls.Add(this.buttonAddEmployee_SSA);
+            this.panelEmployees_SSA.Controls.Add(this.textBoxStartWork_SSA);
+            this.panelEmployees_SSA.Controls.Add(this.textBoxExperience_SSA);
+            this.panelEmployees_SSA.Controls.Add(this.textBoxDegree_SSA);
+            this.panelEmployees_SSA.Controls.Add(this.textBoxBirth_SSA);
+            this.panelEmployees_SSA.Controls.Add(this.textBoxRole_SSA);
+            this.panelEmployees_SSA.Controls.Add(this.textBoxPhone_SSA);
+            this.panelEmployees_SSA.Controls.Add(this.textBoxAdress_SSA);
+            this.panelEmployees_SSA.Controls.Add(this.textBoxFIO_SSA);
+            this.panelEmployees_SSA.Controls.Add(this.labelDegree_SSA);
+            this.panelEmployees_SSA.Controls.Add(this.labelExperience_SSA);
+            this.panelEmployees_SSA.Controls.Add(this.labelStartWork_SSA);
+            this.panelEmployees_SSA.Controls.Add(this.labelRole_SSA);
+            this.panelEmployees_SSA.Controls.Add(this.labelBirth_SSA);
+            this.panelEmployees_SSA.Controls.Add(this.labelPhone_SSA);
+            this.panelEmployees_SSA.Controls.Add(this.labelAdress_SSA);
+            this.panelEmployees_SSA.Controls.Add(this.labelFIO_SSA);
+            this.panelEmployees_SSA.Controls.Add(this.textBoxSearchEmployees_SSA);
+            this.panelEmployees_SSA.Controls.Add(this.dataGridViewEmployees_SSA);
+            this.panelEmployees_SSA.Controls.Add(this.labelEmployees_SSA);
+            this.panelEmployees_SSA.Location = new System.Drawing.Point(228, 0);
+            this.panelEmployees_SSA.Name = "panelEmployees_SSA";
+            this.panelEmployees_SSA.Size = new System.Drawing.Size(1031, 551);
+            this.panelEmployees_SSA.TabIndex = 2;
             // 
             // button8
             // 
@@ -194,31 +208,35 @@
             this.comboBoxSort_SSA.TabIndex = 27;
             this.comboBoxSort_SSA.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // buttonSearch_SSA
+            // buttonSearchEmployees_SSA
             // 
-            this.buttonSearch_SSA.BackColor = System.Drawing.Color.FloralWhite;
-            this.buttonSearch_SSA.FlatAppearance.BorderSize = 0;
-            this.buttonSearch_SSA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSearch_SSA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonSearch_SSA.Location = new System.Drawing.Point(212, 56);
-            this.buttonSearch_SSA.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
-            this.buttonSearch_SSA.Name = "buttonSearch_SSA";
-            this.buttonSearch_SSA.Size = new System.Drawing.Size(31, 30);
-            this.buttonSearch_SSA.TabIndex = 26;
-            this.buttonSearch_SSA.Text = "🔎";
-            this.buttonSearch_SSA.UseVisualStyleBackColor = false;
+            this.buttonSearchEmployees_SSA.BackColor = System.Drawing.Color.FloralWhite;
+            this.buttonSearchEmployees_SSA.FlatAppearance.BorderSize = 0;
+            this.buttonSearchEmployees_SSA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSearchEmployees_SSA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonSearchEmployees_SSA.Location = new System.Drawing.Point(212, 54);
+            this.buttonSearchEmployees_SSA.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
+            this.buttonSearchEmployees_SSA.Name = "buttonSearchEmployees_SSA";
+            this.buttonSearchEmployees_SSA.Size = new System.Drawing.Size(27, 30);
+            this.buttonSearchEmployees_SSA.TabIndex = 26;
+            this.buttonSearchEmployees_SSA.Text = "🔎";
+            this.toolTip_SSA.SetToolTip(this.buttonSearchEmployees_SSA, "Введите данные для поиска.");
+            this.buttonSearchEmployees_SSA.UseVisualStyleBackColor = false;
+            this.buttonSearchEmployees_SSA.Click += new System.EventHandler(this.buttonSearchEmployees_SSA_Click);
+            this.buttonSearchEmployees_SSA.MouseEnter += new System.EventHandler(this.buttonSearchEmployees_SSA_MouseEnter);
             // 
-            // buttonSaveEmployee_SSA
+            // buttonDeleteEmployee_SSA
             // 
-            this.buttonSaveEmployee_SSA.BackColor = System.Drawing.Color.Cornsilk;
-            this.buttonSaveEmployee_SSA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSaveEmployee_SSA.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonSaveEmployee_SSA.Location = new System.Drawing.Point(840, 490);
-            this.buttonSaveEmployee_SSA.Name = "buttonSaveEmployee_SSA";
-            this.buttonSaveEmployee_SSA.Size = new System.Drawing.Size(178, 45);
-            this.buttonSaveEmployee_SSA.TabIndex = 25;
-            this.buttonSaveEmployee_SSA.Text = "Сохранить изменения";
-            this.buttonSaveEmployee_SSA.UseVisualStyleBackColor = false;
+            this.buttonDeleteEmployee_SSA.BackColor = System.Drawing.Color.Cornsilk;
+            this.buttonDeleteEmployee_SSA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDeleteEmployee_SSA.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonDeleteEmployee_SSA.Location = new System.Drawing.Point(840, 490);
+            this.buttonDeleteEmployee_SSA.Name = "buttonDeleteEmployee_SSA";
+            this.buttonDeleteEmployee_SSA.Size = new System.Drawing.Size(178, 45);
+            this.buttonDeleteEmployee_SSA.TabIndex = 25;
+            this.buttonDeleteEmployee_SSA.Text = "Удалить";
+            this.buttonDeleteEmployee_SSA.UseVisualStyleBackColor = false;
+            this.buttonDeleteEmployee_SSA.Click += new System.EventHandler(this.buttonDeleteEmployee_SSA_Click);
             // 
             // buttonAddEmployee_SSA
             // 
@@ -232,6 +250,7 @@
             this.buttonAddEmployee_SSA.TabIndex = 24;
             this.buttonAddEmployee_SSA.Text = "Добавить";
             this.buttonAddEmployee_SSA.UseVisualStyleBackColor = false;
+            this.buttonAddEmployee_SSA.Click += new System.EventHandler(this.buttonAddEmployee_SSA_Click);
             // 
             // textBoxStartWork_SSA
             // 
@@ -369,23 +388,36 @@
             this.labelFIO_SSA.TabIndex = 8;
             this.labelFIO_SSA.Text = "ФИО:";
             // 
-            // textBoxSearch_SSA
+            // textBoxSearchEmployees_SSA
             // 
-            this.textBoxSearch_SSA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxSearch_SSA.Location = new System.Drawing.Point(21, 56);
-            this.textBoxSearch_SSA.Name = "textBoxSearch_SSA";
-            this.textBoxSearch_SSA.Size = new System.Drawing.Size(188, 28);
-            this.textBoxSearch_SSA.TabIndex = 7;
+            this.textBoxSearchEmployees_SSA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxSearchEmployees_SSA.Location = new System.Drawing.Point(21, 56);
+            this.textBoxSearchEmployees_SSA.Name = "textBoxSearchEmployees_SSA";
+            this.textBoxSearchEmployees_SSA.Size = new System.Drawing.Size(188, 28);
+            this.textBoxSearchEmployees_SSA.TabIndex = 7;
             // 
             // dataGridViewEmployees_SSA
             // 
+            this.dataGridViewEmployees_SSA.AllowUserToAddRows = false;
             this.dataGridViewEmployees_SSA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewEmployees_SSA.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.FIO,
+            this.Address,
+            this.Phone,
+            this.Role,
+            this.Birth,
+            this.Degree,
+            this.Experience,
+            this.StartWork});
             this.dataGridViewEmployees_SSA.Location = new System.Drawing.Point(20, 92);
             this.dataGridViewEmployees_SSA.Name = "dataGridViewEmployees_SSA";
+            this.dataGridViewEmployees_SSA.RowHeadersVisible = false;
             this.dataGridViewEmployees_SSA.RowHeadersWidth = 50;
             this.dataGridViewEmployees_SSA.RowTemplate.Height = 24;
+            this.dataGridViewEmployees_SSA.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewEmployees_SSA.Size = new System.Drawing.Size(998, 341);
             this.dataGridViewEmployees_SSA.TabIndex = 5;
+            this.dataGridViewEmployees_SSA.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewEmployees_SSA_CellEndEdit);
             // 
             // labelEmployees_SSA
             // 
@@ -397,19 +429,80 @@
             this.labelEmployees_SSA.TabIndex = 4;
             this.labelEmployees_SSA.Text = "Учет сотрудников";
             // 
+            // toolTip_SSA
+            // 
+            this.toolTip_SSA.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTip_SSA.ToolTipTitle = "Подсказка";
+            // 
+            // FIO
+            // 
+            this.FIO.HeaderText = "ФИО";
+            this.FIO.MinimumWidth = 6;
+            this.FIO.Name = "FIO";
+            this.FIO.Width = 125;
+            // 
+            // Address
+            // 
+            this.Address.HeaderText = "Адрес";
+            this.Address.MinimumWidth = 6;
+            this.Address.Name = "Address";
+            this.Address.Width = 125;
+            // 
+            // Phone
+            // 
+            this.Phone.HeaderText = "Телефон";
+            this.Phone.MinimumWidth = 6;
+            this.Phone.Name = "Phone";
+            this.Phone.Width = 125;
+            // 
+            // Role
+            // 
+            this.Role.HeaderText = "Должность";
+            this.Role.MinimumWidth = 6;
+            this.Role.Name = "Role";
+            this.Role.Width = 125;
+            // 
+            // Birth
+            // 
+            this.Birth.HeaderText = "Дата рождения";
+            this.Birth.MinimumWidth = 6;
+            this.Birth.Name = "Birth";
+            this.Birth.Width = 125;
+            // 
+            // Degree
+            // 
+            this.Degree.HeaderText = "Образование";
+            this.Degree.MinimumWidth = 6;
+            this.Degree.Name = "Degree";
+            this.Degree.Width = 125;
+            // 
+            // Experience
+            // 
+            this.Experience.HeaderText = "Стаж";
+            this.Experience.MinimumWidth = 6;
+            this.Experience.Name = "Experience";
+            this.Experience.Width = 125;
+            // 
+            // StartWork
+            // 
+            this.StartWork.HeaderText = "Дата зачисления";
+            this.StartWork.MinimumWidth = 6;
+            this.StartWork.Name = "StartWork";
+            this.StartWork.Width = 125;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1258, 554);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelEmployees_SSA);
             this.Controls.Add(this.panelMenu_SSA);
             this.Name = "FormMain";
             this.Text = "Отдел кадров";
             this.panelMenu_SSA.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelEmployees_SSA.ResumeLayout(false);
+            this.panelEmployees_SSA.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployees_SSA)).EndInit();
             this.ResumeLayout(false);
 
@@ -422,10 +515,10 @@
         private System.Windows.Forms.Button buttonAbout_SSA;
         private System.Windows.Forms.Button buttonGuide_SSA;
         private System.Windows.Forms.Button buttonUnits_SSA;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelEmployees_SSA;
         private System.Windows.Forms.Label labelEmployees_SSA;
         private System.Windows.Forms.DataGridView dataGridViewEmployees_SSA;
-        private System.Windows.Forms.TextBox textBoxSearch_SSA;
+        private System.Windows.Forms.TextBox textBoxSearchEmployees_SSA;
         private System.Windows.Forms.Label labelAdress_SSA;
         private System.Windows.Forms.Label labelFIO_SSA;
         private System.Windows.Forms.Label labelPhone_SSA;
@@ -442,11 +535,20 @@
         private System.Windows.Forms.TextBox textBoxRole_SSA;
         private System.Windows.Forms.TextBox textBoxPhone_SSA;
         private System.Windows.Forms.TextBox textBoxAdress_SSA;
-        private System.Windows.Forms.Button buttonSearch_SSA;
-        private System.Windows.Forms.Button buttonSaveEmployee_SSA;
+        private System.Windows.Forms.Button buttonSearchEmployees_SSA;
+        private System.Windows.Forms.Button buttonDeleteEmployee_SSA;
         private System.Windows.Forms.Button buttonAddEmployee_SSA;
         private System.Windows.Forms.ComboBox comboBoxSort_SSA;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.ToolTip toolTip_SSA;
+        private DataGridViewTextBoxColumn FIO;
+        private DataGridViewTextBoxColumn Address;
+        private DataGridViewTextBoxColumn Phone;
+        private DataGridViewTextBoxColumn Role;
+        private DataGridViewTextBoxColumn Birth;
+        private DataGridViewTextBoxColumn Degree;
+        private DataGridViewTextBoxColumn Experience;
+        private DataGridViewTextBoxColumn StartWork;
     }
 }
 
