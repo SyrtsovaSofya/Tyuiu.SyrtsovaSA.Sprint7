@@ -37,7 +37,10 @@ namespace Tyuiu.SyrtsovaSA.Sprint7.Project.V11
             this.buttonUnits_SSA = new System.Windows.Forms.Button();
             this.buttonEmployees_SSA = new System.Windows.Forms.Button();
             this.panelEmployees_SSA = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
+            this.labelMoney_SSA = new System.Windows.Forms.Label();
+            this.textBoxMoney_SSA = new System.Windows.Forms.TextBox();
+            this.checkBoxDegree_SSA = new System.Windows.Forms.CheckBox();
+            this.buttonEmployeeStats_SSA = new System.Windows.Forms.Button();
             this.comboBoxSort_SSA = new System.Windows.Forms.ComboBox();
             this.buttonSearchEmployees_SSA = new System.Windows.Forms.Button();
             this.buttonDeleteEmployee_SSA = new System.Windows.Forms.Button();
@@ -60,8 +63,6 @@ namespace Tyuiu.SyrtsovaSA.Sprint7.Project.V11
             this.labelFIO_SSA = new System.Windows.Forms.Label();
             this.textBoxSearchEmployees_SSA = new System.Windows.Forms.TextBox();
             this.dataGridViewEmployees_SSA = new System.Windows.Forms.DataGridView();
-            this.labelEmployees_SSA = new System.Windows.Forms.Label();
-            this.toolTip_SSA = new System.Windows.Forms.ToolTip(this.components);
             this.FIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -70,6 +71,9 @@ namespace Tyuiu.SyrtsovaSA.Sprint7.Project.V11
             this.Degree = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Experience = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.StartWork = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Оклад = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.labelEmployees_SSA = new System.Windows.Forms.Label();
+            this.toolTip_SSA = new System.Windows.Forms.ToolTip(this.components);
             this.panelMenu_SSA.SuspendLayout();
             this.panelEmployees_SSA.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployees_SSA)).BeginInit();
@@ -156,7 +160,10 @@ namespace Tyuiu.SyrtsovaSA.Sprint7.Project.V11
             // panelEmployees_SSA
             // 
             this.panelEmployees_SSA.BackColor = System.Drawing.Color.FloralWhite;
-            this.panelEmployees_SSA.Controls.Add(this.button8);
+            this.panelEmployees_SSA.Controls.Add(this.labelMoney_SSA);
+            this.panelEmployees_SSA.Controls.Add(this.textBoxMoney_SSA);
+            this.panelEmployees_SSA.Controls.Add(this.checkBoxDegree_SSA);
+            this.panelEmployees_SSA.Controls.Add(this.buttonEmployeeStats_SSA);
             this.panelEmployees_SSA.Controls.Add(this.comboBoxSort_SSA);
             this.panelEmployees_SSA.Controls.Add(this.buttonSearchEmployees_SSA);
             this.panelEmployees_SSA.Controls.Add(this.buttonDeleteEmployee_SSA);
@@ -182,29 +189,58 @@ namespace Tyuiu.SyrtsovaSA.Sprint7.Project.V11
             this.panelEmployees_SSA.Controls.Add(this.labelEmployees_SSA);
             this.panelEmployees_SSA.Location = new System.Drawing.Point(228, 0);
             this.panelEmployees_SSA.Name = "panelEmployees_SSA";
-            this.panelEmployees_SSA.Size = new System.Drawing.Size(1031, 551);
+            this.panelEmployees_SSA.Size = new System.Drawing.Size(1168, 551);
             this.panelEmployees_SSA.TabIndex = 2;
             // 
-            // button8
+            // labelMoney_SSA
             // 
-            this.button8.BackColor = System.Drawing.Color.Cornsilk;
-            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button8.Location = new System.Drawing.Point(840, 45);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(178, 41);
-            this.button8.TabIndex = 28;
-            this.button8.Text = "Статистика";
-            this.button8.UseVisualStyleBackColor = false;
+            this.labelMoney_SSA.AutoSize = true;
+            this.labelMoney_SSA.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelMoney_SSA.Location = new System.Drawing.Point(676, 436);
+            this.labelMoney_SSA.Name = "labelMoney_SSA";
+            this.labelMoney_SSA.Size = new System.Drawing.Size(54, 20);
+            this.labelMoney_SSA.TabIndex = 31;
+            this.labelMoney_SSA.Text = "Оклад:";
+            // 
+            // textBoxMoney_SSA
+            // 
+            this.textBoxMoney_SSA.Location = new System.Drawing.Point(680, 460);
+            this.textBoxMoney_SSA.Name = "textBoxMoney_SSA";
+            this.textBoxMoney_SSA.Size = new System.Drawing.Size(123, 22);
+            this.textBoxMoney_SSA.TabIndex = 30;
+            // 
+            // checkBoxDegree_SSA
+            // 
+            this.checkBoxDegree_SSA.AutoSize = true;
+            this.checkBoxDegree_SSA.Location = new System.Drawing.Point(492, 60);
+            this.checkBoxDegree_SSA.Name = "checkBoxDegree_SSA";
+            this.checkBoxDegree_SSA.Size = new System.Drawing.Size(108, 20);
+            this.checkBoxDegree_SSA.TabIndex = 29;
+            this.checkBoxDegree_SSA.Text = "Только с ВО";
+            this.checkBoxDegree_SSA.UseVisualStyleBackColor = true;
+            this.checkBoxDegree_SSA.CheckedChanged += new System.EventHandler(this.checkBoxDegree_SSA_CheckedChanged);
+            // 
+            // buttonEmployeeStats_SSA
+            // 
+            this.buttonEmployeeStats_SSA.BackColor = System.Drawing.Color.Cornsilk;
+            this.buttonEmployeeStats_SSA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonEmployeeStats_SSA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEmployeeStats_SSA.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonEmployeeStats_SSA.Location = new System.Drawing.Point(970, 48);
+            this.buttonEmployeeStats_SSA.Name = "buttonEmployeeStats_SSA";
+            this.buttonEmployeeStats_SSA.Size = new System.Drawing.Size(178, 41);
+            this.buttonEmployeeStats_SSA.TabIndex = 28;
+            this.buttonEmployeeStats_SSA.Text = "Статистика";
+            this.buttonEmployeeStats_SSA.UseVisualStyleBackColor = false;
+            this.buttonEmployeeStats_SSA.Click += new System.EventHandler(this.buttonEmployeeStats_SSA_Click);
             // 
             // comboBoxSort_SSA
             // 
-            this.comboBoxSort_SSA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBoxSort_SSA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBoxSort_SSA.FormattingEnabled = true;
             this.comboBoxSort_SSA.Location = new System.Drawing.Point(281, 56);
             this.comboBoxSort_SSA.Name = "comboBoxSort_SSA";
-            this.comboBoxSort_SSA.Size = new System.Drawing.Size(168, 30);
+            this.comboBoxSort_SSA.Size = new System.Drawing.Size(168, 26);
             this.comboBoxSort_SSA.TabIndex = 27;
             this.comboBoxSort_SSA.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -230,7 +266,7 @@ namespace Tyuiu.SyrtsovaSA.Sprint7.Project.V11
             this.buttonDeleteEmployee_SSA.BackColor = System.Drawing.Color.Cornsilk;
             this.buttonDeleteEmployee_SSA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonDeleteEmployee_SSA.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonDeleteEmployee_SSA.Location = new System.Drawing.Point(840, 490);
+            this.buttonDeleteEmployee_SSA.Location = new System.Drawing.Point(970, 490);
             this.buttonDeleteEmployee_SSA.Name = "buttonDeleteEmployee_SSA";
             this.buttonDeleteEmployee_SSA.Size = new System.Drawing.Size(178, 45);
             this.buttonDeleteEmployee_SSA.TabIndex = 25;
@@ -244,7 +280,7 @@ namespace Tyuiu.SyrtsovaSA.Sprint7.Project.V11
             this.buttonAddEmployee_SSA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.buttonAddEmployee_SSA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAddEmployee_SSA.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonAddEmployee_SSA.Location = new System.Drawing.Point(840, 441);
+            this.buttonAddEmployee_SSA.Location = new System.Drawing.Point(970, 443);
             this.buttonAddEmployee_SSA.Name = "buttonAddEmployee_SSA";
             this.buttonAddEmployee_SSA.Size = new System.Drawing.Size(178, 41);
             this.buttonAddEmployee_SSA.TabIndex = 24;
@@ -408,31 +444,18 @@ namespace Tyuiu.SyrtsovaSA.Sprint7.Project.V11
             this.Birth,
             this.Degree,
             this.Experience,
-            this.StartWork});
+            this.StartWork,
+            this.Оклад});
             this.dataGridViewEmployees_SSA.Location = new System.Drawing.Point(20, 92);
+            this.dataGridViewEmployees_SSA.MultiSelect = false;
             this.dataGridViewEmployees_SSA.Name = "dataGridViewEmployees_SSA";
             this.dataGridViewEmployees_SSA.RowHeadersVisible = false;
             this.dataGridViewEmployees_SSA.RowHeadersWidth = 50;
             this.dataGridViewEmployees_SSA.RowTemplate.Height = 24;
             this.dataGridViewEmployees_SSA.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewEmployees_SSA.Size = new System.Drawing.Size(998, 341);
+            this.dataGridViewEmployees_SSA.Size = new System.Drawing.Size(1128, 341);
             this.dataGridViewEmployees_SSA.TabIndex = 5;
             this.dataGridViewEmployees_SSA.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewEmployees_SSA_CellEndEdit);
-            // 
-            // labelEmployees_SSA
-            // 
-            this.labelEmployees_SSA.AutoSize = true;
-            this.labelEmployees_SSA.Font = new System.Drawing.Font("Segoe UI Semilight", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelEmployees_SSA.Location = new System.Drawing.Point(404, 9);
-            this.labelEmployees_SSA.Name = "labelEmployees_SSA";
-            this.labelEmployees_SSA.Size = new System.Drawing.Size(196, 31);
-            this.labelEmployees_SSA.TabIndex = 4;
-            this.labelEmployees_SSA.Text = "Учет сотрудников";
-            // 
-            // toolTip_SSA
-            // 
-            this.toolTip_SSA.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            this.toolTip_SSA.ToolTipTitle = "Подсказка";
             // 
             // FIO
             // 
@@ -490,12 +513,34 @@ namespace Tyuiu.SyrtsovaSA.Sprint7.Project.V11
             this.StartWork.Name = "StartWork";
             this.StartWork.Width = 125;
             // 
+            // Оклад
+            // 
+            this.Оклад.HeaderText = "Money";
+            this.Оклад.MinimumWidth = 6;
+            this.Оклад.Name = "Оклад";
+            this.Оклад.Width = 125;
+            // 
+            // labelEmployees_SSA
+            // 
+            this.labelEmployees_SSA.AutoSize = true;
+            this.labelEmployees_SSA.Font = new System.Drawing.Font("Segoe UI Semilight", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelEmployees_SSA.Location = new System.Drawing.Point(404, 9);
+            this.labelEmployees_SSA.Name = "labelEmployees_SSA";
+            this.labelEmployees_SSA.Size = new System.Drawing.Size(196, 31);
+            this.labelEmployees_SSA.TabIndex = 4;
+            this.labelEmployees_SSA.Text = "Учет сотрудников";
+            // 
+            // toolTip_SSA
+            // 
+            this.toolTip_SSA.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.toolTip_SSA.ToolTipTitle = "Подсказка";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1258, 554);
+            this.ClientSize = new System.Drawing.Size(1396, 554);
             this.Controls.Add(this.panelEmployees_SSA);
             this.Controls.Add(this.panelMenu_SSA);
             this.Name = "FormMain";
@@ -539,7 +584,7 @@ namespace Tyuiu.SyrtsovaSA.Sprint7.Project.V11
         private System.Windows.Forms.Button buttonDeleteEmployee_SSA;
         private System.Windows.Forms.Button buttonAddEmployee_SSA;
         private System.Windows.Forms.ComboBox comboBoxSort_SSA;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button buttonEmployeeStats_SSA;
         private System.Windows.Forms.ToolTip toolTip_SSA;
         private DataGridViewTextBoxColumn FIO;
         private DataGridViewTextBoxColumn Address;
@@ -549,6 +594,10 @@ namespace Tyuiu.SyrtsovaSA.Sprint7.Project.V11
         private DataGridViewTextBoxColumn Degree;
         private DataGridViewTextBoxColumn Experience;
         private DataGridViewTextBoxColumn StartWork;
+        private CheckBox checkBoxDegree_SSA;
+        private DataGridViewTextBoxColumn Оклад;
+        private Label labelMoney_SSA;
+        private TextBox textBoxMoney_SSA;
     }
 }
 

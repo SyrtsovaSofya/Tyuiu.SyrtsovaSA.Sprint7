@@ -22,8 +22,18 @@ namespace Tyuiu.SyrtsovaSA.Sprint7.Project.V11.Test
         {
             DataService ds = new DataService();
             string pathSaveFile = $@"C:\Users\Linn\source\repos\Tyuiu.SyrtsovaSA.Sprint7\Tyuiu.SyrtsovaSA.Sprint7.Project.V11\Files\employees.csv";
-            string[,] data = { { "Валиев Игорь Сергеевич", "Тюмень, Судоремонтная 45", "79829529672", "Директор", "15.03.2005", "ВО", "3", "17.05.2021" } };
-            bool res = ds.UpdateData(pathSaveFile, data);
+            string[] data = {"Валиев Игорь Сергеевич;Тюмень, Судоремонтная 45;79829529672;Директор;15.03.2005;ВО;3;17.05.2021"};
+            bool res = ds.UpdateData(pathSaveFile, data, 0);
+            Assert.AreEqual(true, res);
+        }
+
+        [TestMethod]
+        public void CheckDeleteData()
+        {
+            DataService ds = new DataService();
+            string pathSaveFile = $@"C:\Users\Linn\source\repos\Tyuiu.SyrtsovaSA.Sprint7\Tyuiu.SyrtsovaSA.Sprint7.Project.V11\Files\employees.csv";
+            string[] data = { "Валиев Игорь Сергеевич;Тюмень, Судоремонтная 45;79829529672;Директор;15.03.2005;ВО;3;17.05.2021" };
+            bool res = ds.DeleteData(pathSaveFile, 0);
             Assert.AreEqual(true, res);
         }
 

@@ -67,5 +67,21 @@ namespace Tyuiu.SyrtsovaSA.Sprint7.Project.V11.Lib
             File.WriteAllLines(path, lines, Encoding.GetEncoding(1251));
             return true;
         }
+
+        public double GetAverageValue(double[] array)
+        {
+            double avg = array.Average();
+            return avg;
+        }
+        public double GetMinValue(double[] array)
+        {
+            double min = array.Min();
+            return min;
+        }
+        public double GetMaxValue(double[] array)
+        {
+            double max = array.Max();
+            return max;
+        }
     }
 }
