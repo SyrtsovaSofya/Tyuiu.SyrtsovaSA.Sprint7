@@ -37,6 +37,26 @@ namespace Tyuiu.SyrtsovaSA.Sprint7.Project.V11
             this.buttonUnits_SSA = new System.Windows.Forms.Button();
             this.buttonEmployees_SSA = new System.Windows.Forms.Button();
             this.panelEmployees_SSA = new System.Windows.Forms.Panel();
+            this.panelUnits_SSA = new System.Windows.Forms.Panel();
+            this.textBoxMoneyPerYear_SSA = new System.Windows.Forms.TextBox();
+            this.labelMoneyPerYear_SSA = new System.Windows.Forms.Label();
+            this.buttonUnitStats_SSA = new System.Windows.Forms.Button();
+            this.buttonSearchUnits_SSA = new System.Windows.Forms.Button();
+            this.buttonDeleteUnit_SSA = new System.Windows.Forms.Button();
+            this.buttonAddUnit_SSA = new System.Windows.Forms.Button();
+            this.textBoxMoneyPerMonth_SSA = new System.Windows.Forms.TextBox();
+            this.textBoxCount_SSA = new System.Windows.Forms.TextBox();
+            this.textBoxName_SSA = new System.Windows.Forms.TextBox();
+            this.labelMoneyPerMonth_SSA = new System.Windows.Forms.Label();
+            this.labelCount_SSA = new System.Windows.Forms.Label();
+            this.labelName_SSA = new System.Windows.Forms.Label();
+            this.textBoxSearchUnits_SSA = new System.Windows.Forms.TextBox();
+            this.dataGridViewUnits_SSA = new System.Windows.Forms.DataGridView();
+            this.UnitName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Count = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MoneyPerMonth = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MoneyPerYear = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.labelUnits_SSA = new System.Windows.Forms.Label();
             this.labelMoney_SSA = new System.Windows.Forms.Label();
             this.textBoxMoney_SSA = new System.Windows.Forms.TextBox();
             this.checkBoxDegree_SSA = new System.Windows.Forms.CheckBox();
@@ -76,6 +96,8 @@ namespace Tyuiu.SyrtsovaSA.Sprint7.Project.V11
             this.toolTip_SSA = new System.Windows.Forms.ToolTip(this.components);
             this.panelMenu_SSA.SuspendLayout();
             this.panelEmployees_SSA.SuspendLayout();
+            this.panelUnits_SSA.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUnits_SSA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployees_SSA)).BeginInit();
             this.SuspendLayout();
             // 
@@ -192,6 +214,221 @@ namespace Tyuiu.SyrtsovaSA.Sprint7.Project.V11
             this.panelEmployees_SSA.Size = new System.Drawing.Size(1168, 551);
             this.panelEmployees_SSA.TabIndex = 2;
             // 
+            // panelUnits_SSA
+            // 
+            this.panelUnits_SSA.BackColor = System.Drawing.Color.FloralWhite;
+            this.panelUnits_SSA.Controls.Add(this.textBoxMoneyPerYear_SSA);
+            this.panelUnits_SSA.Controls.Add(this.labelMoneyPerYear_SSA);
+            this.panelUnits_SSA.Controls.Add(this.buttonUnitStats_SSA);
+            this.panelUnits_SSA.Controls.Add(this.buttonSearchUnits_SSA);
+            this.panelUnits_SSA.Controls.Add(this.buttonDeleteUnit_SSA);
+            this.panelUnits_SSA.Controls.Add(this.buttonAddUnit_SSA);
+            this.panelUnits_SSA.Controls.Add(this.textBoxMoneyPerMonth_SSA);
+            this.panelUnits_SSA.Controls.Add(this.textBoxCount_SSA);
+            this.panelUnits_SSA.Controls.Add(this.textBoxName_SSA);
+            this.panelUnits_SSA.Controls.Add(this.labelMoneyPerMonth_SSA);
+            this.panelUnits_SSA.Controls.Add(this.labelCount_SSA);
+            this.panelUnits_SSA.Controls.Add(this.labelName_SSA);
+            this.panelUnits_SSA.Controls.Add(this.textBoxSearchUnits_SSA);
+            this.panelUnits_SSA.Controls.Add(this.dataGridViewUnits_SSA);
+            this.panelUnits_SSA.Controls.Add(this.labelUnits_SSA);
+            this.panelUnits_SSA.Location = new System.Drawing.Point(228, 0);
+            this.panelUnits_SSA.Name = "panelUnits_SSA";
+            this.panelUnits_SSA.Size = new System.Drawing.Size(1168, 551);
+            this.panelUnits_SSA.TabIndex = 32;
+            this.panelUnits_SSA.Visible = false;
+            // 
+            // textBoxMoneyPerYear_SSA
+            // 
+            this.textBoxMoneyPerYear_SSA.Location = new System.Drawing.Point(640, 467);
+            this.textBoxMoneyPerYear_SSA.Name = "textBoxMoneyPerYear_SSA";
+            this.textBoxMoneyPerYear_SSA.Size = new System.Drawing.Size(150, 22);
+            this.textBoxMoneyPerYear_SSA.TabIndex = 33;
+            // 
+            // labelMoneyPerYear_SSA
+            // 
+            this.labelMoneyPerYear_SSA.AutoSize = true;
+            this.labelMoneyPerYear_SSA.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelMoneyPerYear_SSA.Location = new System.Drawing.Point(636, 444);
+            this.labelMoneyPerYear_SSA.Name = "labelMoneyPerYear_SSA";
+            this.labelMoneyPerYear_SSA.Size = new System.Drawing.Size(165, 20);
+            this.labelMoneyPerYear_SSA.TabIndex = 32;
+            this.labelMoneyPerYear_SSA.Text = "Фонд зарплаты за год:";
+            // 
+            // buttonUnitStats_SSA
+            // 
+            this.buttonUnitStats_SSA.BackColor = System.Drawing.Color.Cornsilk;
+            this.buttonUnitStats_SSA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonUnitStats_SSA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonUnitStats_SSA.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonUnitStats_SSA.Location = new System.Drawing.Point(970, 48);
+            this.buttonUnitStats_SSA.Name = "buttonUnitStats_SSA";
+            this.buttonUnitStats_SSA.Size = new System.Drawing.Size(178, 41);
+            this.buttonUnitStats_SSA.TabIndex = 28;
+            this.buttonUnitStats_SSA.Text = "Статистика";
+            this.buttonUnitStats_SSA.UseVisualStyleBackColor = false;
+            this.buttonUnitStats_SSA.Click += new System.EventHandler(this.buttonUnitStats_SSA_Click);
+            // 
+            // buttonSearchUnits_SSA
+            // 
+            this.buttonSearchUnits_SSA.BackColor = System.Drawing.Color.FloralWhite;
+            this.buttonSearchUnits_SSA.FlatAppearance.BorderSize = 0;
+            this.buttonSearchUnits_SSA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSearchUnits_SSA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonSearchUnits_SSA.Location = new System.Drawing.Point(212, 54);
+            this.buttonSearchUnits_SSA.Margin = new System.Windows.Forms.Padding(0, 3, 3, 3);
+            this.buttonSearchUnits_SSA.Name = "buttonSearchUnits_SSA";
+            this.buttonSearchUnits_SSA.Size = new System.Drawing.Size(27, 30);
+            this.buttonSearchUnits_SSA.TabIndex = 26;
+            this.buttonSearchUnits_SSA.Text = "🔎";
+            this.toolTip_SSA.SetToolTip(this.buttonSearchUnits_SSA, "Введите данные для поиска.");
+            this.buttonSearchUnits_SSA.UseVisualStyleBackColor = false;
+            this.buttonSearchUnits_SSA.Click += new System.EventHandler(this.buttonSearchUnits_SSA_Click);
+            this.buttonSearchUnits_SSA.MouseEnter += new System.EventHandler(this.buttonSearchEmployees_SSA_MouseEnter);
+            // 
+            // buttonDeleteUnit_SSA
+            // 
+            this.buttonDeleteUnit_SSA.BackColor = System.Drawing.Color.Cornsilk;
+            this.buttonDeleteUnit_SSA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDeleteUnit_SSA.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonDeleteUnit_SSA.Location = new System.Drawing.Point(970, 490);
+            this.buttonDeleteUnit_SSA.Name = "buttonDeleteUnit_SSA";
+            this.buttonDeleteUnit_SSA.Size = new System.Drawing.Size(178, 45);
+            this.buttonDeleteUnit_SSA.TabIndex = 25;
+            this.buttonDeleteUnit_SSA.Text = "Удалить";
+            this.buttonDeleteUnit_SSA.UseVisualStyleBackColor = false;
+            this.buttonDeleteUnit_SSA.Click += new System.EventHandler(this.buttonDeleteUnit_SSA_Click);
+            // 
+            // buttonAddUnit_SSA
+            // 
+            this.buttonAddUnit_SSA.BackColor = System.Drawing.Color.Cornsilk;
+            this.buttonAddUnit_SSA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonAddUnit_SSA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonAddUnit_SSA.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonAddUnit_SSA.Location = new System.Drawing.Point(970, 443);
+            this.buttonAddUnit_SSA.Name = "buttonAddUnit_SSA";
+            this.buttonAddUnit_SSA.Size = new System.Drawing.Size(178, 41);
+            this.buttonAddUnit_SSA.TabIndex = 24;
+            this.buttonAddUnit_SSA.Text = "Добавить";
+            this.buttonAddUnit_SSA.UseVisualStyleBackColor = false;
+            this.buttonAddUnit_SSA.Click += new System.EventHandler(this.buttonAddUnit_SSA_Click);
+            // 
+            // textBoxMoneyPerMonth_SSA
+            // 
+            this.textBoxMoneyPerMonth_SSA.Location = new System.Drawing.Point(426, 467);
+            this.textBoxMoneyPerMonth_SSA.Name = "textBoxMoneyPerMonth_SSA";
+            this.textBoxMoneyPerMonth_SSA.Size = new System.Drawing.Size(150, 22);
+            this.textBoxMoneyPerMonth_SSA.TabIndex = 18;
+            // 
+            // textBoxCount_SSA
+            // 
+            this.textBoxCount_SSA.Location = new System.Drawing.Point(199, 467);
+            this.textBoxCount_SSA.Name = "textBoxCount_SSA";
+            this.textBoxCount_SSA.Size = new System.Drawing.Size(150, 22);
+            this.textBoxCount_SSA.TabIndex = 17;
+            // 
+            // textBoxName_SSA
+            // 
+            this.textBoxName_SSA.Location = new System.Drawing.Point(20, 467);
+            this.textBoxName_SSA.Name = "textBoxName_SSA";
+            this.textBoxName_SSA.Size = new System.Drawing.Size(150, 22);
+            this.textBoxName_SSA.TabIndex = 16;
+            // 
+            // labelMoneyPerMonth_SSA
+            // 
+            this.labelMoneyPerMonth_SSA.AutoSize = true;
+            this.labelMoneyPerMonth_SSA.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelMoneyPerMonth_SSA.Location = new System.Drawing.Point(422, 444);
+            this.labelMoneyPerMonth_SSA.Name = "labelMoneyPerMonth_SSA";
+            this.labelMoneyPerMonth_SSA.Size = new System.Drawing.Size(185, 20);
+            this.labelMoneyPerMonth_SSA.TabIndex = 10;
+            this.labelMoneyPerMonth_SSA.Text = "Фонд зарплаты за месяц:";
+            // 
+            // labelCount_SSA
+            // 
+            this.labelCount_SSA.AutoSize = true;
+            this.labelCount_SSA.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelCount_SSA.Location = new System.Drawing.Point(196, 444);
+            this.labelCount_SSA.Name = "labelCount_SSA";
+            this.labelCount_SSA.Size = new System.Drawing.Size(212, 20);
+            this.labelCount_SSA.TabIndex = 9;
+            this.labelCount_SSA.Text = "Количество штатных единиц:";
+            // 
+            // labelName_SSA
+            // 
+            this.labelName_SSA.AutoSize = true;
+            this.labelName_SSA.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelName_SSA.Location = new System.Drawing.Point(17, 443);
+            this.labelName_SSA.Name = "labelName_SSA";
+            this.labelName_SSA.Size = new System.Drawing.Size(119, 20);
+            this.labelName_SSA.TabIndex = 8;
+            this.labelName_SSA.Text = "Наименование:";
+            // 
+            // textBoxSearchUnits_SSA
+            // 
+            this.textBoxSearchUnits_SSA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxSearchUnits_SSA.Location = new System.Drawing.Point(21, 56);
+            this.textBoxSearchUnits_SSA.Name = "textBoxSearchUnits_SSA";
+            this.textBoxSearchUnits_SSA.Size = new System.Drawing.Size(188, 28);
+            this.textBoxSearchUnits_SSA.TabIndex = 7;
+            // 
+            // dataGridViewUnits_SSA
+            // 
+            this.dataGridViewUnits_SSA.AllowUserToAddRows = false;
+            this.dataGridViewUnits_SSA.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewUnits_SSA.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridViewUnits_SSA.ColumnHeadersHeight = 29;
+            this.dataGridViewUnits_SSA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridViewUnits_SSA.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.UnitName,
+            this.Count,
+            this.MoneyPerMonth,
+            this.MoneyPerYear});
+            this.dataGridViewUnits_SSA.Location = new System.Drawing.Point(20, 92);
+            this.dataGridViewUnits_SSA.MultiSelect = false;
+            this.dataGridViewUnits_SSA.Name = "dataGridViewUnits_SSA";
+            this.dataGridViewUnits_SSA.RowHeadersVisible = false;
+            this.dataGridViewUnits_SSA.RowHeadersWidth = 50;
+            this.dataGridViewUnits_SSA.RowTemplate.Height = 24;
+            this.dataGridViewUnits_SSA.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewUnits_SSA.Size = new System.Drawing.Size(1128, 341);
+            this.dataGridViewUnits_SSA.TabIndex = 5;
+            this.dataGridViewUnits_SSA.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewUnits_SSA_CellEndEdit);
+            // 
+            // UnitName
+            // 
+            this.UnitName.HeaderText = "Наименование";
+            this.UnitName.MinimumWidth = 6;
+            this.UnitName.Name = "UnitName";
+            // 
+            // Count
+            // 
+            this.Count.HeaderText = "Количество штатных единиц";
+            this.Count.MinimumWidth = 6;
+            this.Count.Name = "Count";
+            // 
+            // MoneyPerMonth
+            // 
+            this.MoneyPerMonth.HeaderText = "Фонд зарплаты за месяц";
+            this.MoneyPerMonth.MinimumWidth = 6;
+            this.MoneyPerMonth.Name = "MoneyPerMonth";
+            // 
+            // MoneyPerYear
+            // 
+            this.MoneyPerYear.HeaderText = "Фонд зарплаты за год";
+            this.MoneyPerYear.MinimumWidth = 6;
+            this.MoneyPerYear.Name = "MoneyPerYear";
+            // 
+            // labelUnits_SSA
+            // 
+            this.labelUnits_SSA.AutoSize = true;
+            this.labelUnits_SSA.Font = new System.Drawing.Font("Segoe UI Semilight", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelUnits_SSA.Location = new System.Drawing.Point(404, 9);
+            this.labelUnits_SSA.Name = "labelUnits_SSA";
+            this.labelUnits_SSA.Size = new System.Drawing.Size(227, 31);
+            this.labelUnits_SSA.TabIndex = 4;
+            this.labelUnits_SSA.Text = "Учет подразделений";
+            // 
             // labelMoney_SSA
             // 
             this.labelMoney_SSA.AutoSize = true;
@@ -242,7 +479,7 @@ namespace Tyuiu.SyrtsovaSA.Sprint7.Project.V11
             this.comboBoxSort_SSA.Name = "comboBoxSort_SSA";
             this.comboBoxSort_SSA.Size = new System.Drawing.Size(168, 26);
             this.comboBoxSort_SSA.TabIndex = 27;
-            this.comboBoxSort_SSA.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBoxSort_SSA.SelectedIndexChanged += new System.EventHandler(this.comboBoxSort_SSA_SelectedIndexChanged);
             // 
             // buttonSearchEmployees_SSA
             // 
@@ -540,14 +777,20 @@ namespace Tyuiu.SyrtsovaSA.Sprint7.Project.V11
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1396, 554);
+            this.ClientSize = new System.Drawing.Size(1396, 553);
+            this.Controls.Add(this.panelUnits_SSA);
             this.Controls.Add(this.panelEmployees_SSA);
             this.Controls.Add(this.panelMenu_SSA);
+            this.MaximumSize = new System.Drawing.Size(1414, 600);
+            this.MinimumSize = new System.Drawing.Size(1414, 600);
             this.Name = "FormMain";
             this.Text = "Отдел кадров";
             this.panelMenu_SSA.ResumeLayout(false);
             this.panelEmployees_SSA.ResumeLayout(false);
             this.panelEmployees_SSA.PerformLayout();
+            this.panelUnits_SSA.ResumeLayout(false);
+            this.panelUnits_SSA.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUnits_SSA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewEmployees_SSA)).EndInit();
             this.ResumeLayout(false);
 
@@ -598,6 +841,26 @@ namespace Tyuiu.SyrtsovaSA.Sprint7.Project.V11
         private DataGridViewTextBoxColumn Оклад;
         private Label labelMoney_SSA;
         private TextBox textBoxMoney_SSA;
+        private Panel panelUnits_SSA;
+        private Button buttonUnitStats_SSA;
+        private Button buttonSearchUnits_SSA;
+        private Button buttonDeleteUnit_SSA;
+        private Button buttonAddUnit_SSA;
+        private TextBox textBoxMoneyPerMonth_SSA;
+        private TextBox textBoxCount_SSA;
+        private TextBox textBoxName_SSA;
+        private Label labelMoneyPerMonth_SSA;
+        private Label labelCount_SSA;
+        private Label labelName_SSA;
+        private TextBox textBoxSearchUnits_SSA;
+        private DataGridView dataGridViewUnits_SSA;
+        private Label labelUnits_SSA;
+        private TextBox textBoxMoneyPerYear_SSA;
+        private Label labelMoneyPerYear_SSA;
+        private DataGridViewTextBoxColumn UnitName;
+        private DataGridViewTextBoxColumn Count;
+        private DataGridViewTextBoxColumn MoneyPerMonth;
+        private DataGridViewTextBoxColumn MoneyPerYear;
     }
 }
 

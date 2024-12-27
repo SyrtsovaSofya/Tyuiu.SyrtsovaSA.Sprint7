@@ -37,5 +37,32 @@ namespace Tyuiu.SyrtsovaSA.Sprint7.Project.V11.Test
             Assert.AreEqual(true, res);
         }
 
+        [TestMethod]
+        public void CheckGetAvgValue()
+        {
+            DataService ds = new DataService();
+            double[] data = { 5, 4, 3 };
+            double res = ds.GetAverageValue(data);
+            Assert.AreEqual(4, res);
+        }
+
+        [TestMethod]
+        public void CheckGetMaxValue()
+        {
+            DataService ds = new DataService();
+            double[] data = { 5, 4, 3 };
+            double res = ds.GetMinValue(data);
+            Assert.AreEqual(3, res);
+        }
+
+        [TestMethod]
+        public void CheckMinAvgValue()
+        {
+            DataService ds = new DataService();
+            double[] data = { 5, 4, 3 };
+            double res = ds.GetMaxValue(data);
+            Assert.AreEqual(5, res);
+        }
+
     }
 }

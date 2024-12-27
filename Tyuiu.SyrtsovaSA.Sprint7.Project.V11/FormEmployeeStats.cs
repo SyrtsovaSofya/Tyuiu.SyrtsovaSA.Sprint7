@@ -17,9 +17,9 @@ namespace Tyuiu.SyrtsovaSA.Sprint7.Project.V11
             var moneyIndex = 8;
             for (int i = 0; i < data.GetLength(0); i++)
             {
-                var moneyString = data[i, moneyIndex].Replace('.', ',');
-                var parseSuccess = double.TryParse(moneyString, out double money);
-                if (!parseSuccess)
+                var moneyText = data[i, moneyIndex].Replace('.', ',');
+                var parsed = double.TryParse(moneyText, out double money);
+                if (!parsed)
                 {
                     MessageBox.Show("Оклад введен неправильно.");
                     return;
